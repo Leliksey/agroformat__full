@@ -446,7 +446,7 @@
 
 .catalog__products-grid .recommended__item-group button {
     height: 40px;
-    width: 45px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -723,4 +723,8 @@ min-width: max-content;
 }
 .catalog__products-column .catalog__mobile-rating .star{
     font-size: 17px;
+}
+.recommended__item-group button svg{
+    z-index: 20;
+    position: relative;
 }

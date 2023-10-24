@@ -1,7 +1,7 @@
 .blog  {
     padding: 0 0 50px 0;
 }
-@media(max-width: 768px) {
+@media(max-width: 768px) { 
     .blog  {
         padding: 0 0 25px 0;
     }

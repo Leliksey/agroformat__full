@@ -1151,3 +1151,7 @@
 .blogOpen .recommended {
     margin-top: 50px;
 }
+.recommended__item-group button svg{
+    z-index: 20;
+    position: relative;
+}

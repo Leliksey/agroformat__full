@@ -4,7 +4,7 @@ $(document).ready(function() {
         var videoId = $(this).data("video");
         $(this).parents(".tehno__row").find("video").attr("data-video", videoId)
         // Находим соответствующее видео по идентификатору
-        var video = $(".video[data-video='" + videoId + "']")[0];
+        var video = $(".video[data-video='" + videoId + "']").eq(0);
         // Проверяем, существует ли видео и воспроизводится ли оно в данный момент
         if (video && video.paused !== undefined) {
         if (video.paused) {

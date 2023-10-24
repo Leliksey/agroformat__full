@@ -82,6 +82,7 @@ a:focus {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 37px;
+  margin-top: 15px;
 }
 @media ( max-width: 1200px ) {
   .service__title {

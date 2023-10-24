@@ -499,11 +499,18 @@ select::-ms-expand {
   transform: translateX(-15px);
   transition: 0.5s;
 }
+.catalog__products-grid .recommended__item-group button {
+  padding: 0 10px;
+  
+}
+.catalog__products-grid .recommended__item-group button:hover::before {
+  transform: translateX(-10px);
+}
 .login__modal-customButton:hover::before {
   transform: translateX(-125px);
 }
 
-#scrollTopButton {
+#scrollTopButton { 
   display: none;
   position: fixed;
   bottom: 20px;
