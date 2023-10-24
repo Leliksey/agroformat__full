@@ -173,7 +173,7 @@ $(document).ready(function() {
         e.stopPropagation()
     })
 
-    $(".productPage__reviews-footer .customLink").click(function() {
+    $(".productPage__reviews-footer #addReview").click(function() {
         $(".overlay").show();
         $(".productPage__addReview").show();
     })
@@ -196,6 +196,20 @@ $(document).ready(function() {
       $(".productPage__addReview-login .customLink").click(function() {
         $(".close__addReview").click();
         $(".login__modal").show();
+      });
+
+      $(".pagination__prev").click(function() {
+        $(".pagination__item.active").prev().addClass("active");
+        $(".pagination__item.active").next().removeClass("active");
+    });
+    $(".pagination__next").click(function() {
+        $(".pagination__item.active").next().addClass("active");
+        $(".pagination__item.active").prev().removeClass("active");
+    });
+
+    $(".pagination__item").click(function() {
+        $(".pagination__item").removeClass("active");
+        $(this).addClass("active");
       });
 
       $(".tehno__media-btn").on("click", function() {
