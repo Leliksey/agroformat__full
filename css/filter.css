@@ -1,0 +1,27 @@
+.filter {
+    width: 100%;
+    max-width: 375px;
+    background-color: #EBEBEB;
+}
+@media(max-width: 1440px) {
+    .filter {
+        max-width: 300px;
+    }
+}
+@media(max-width: 1280px) {
+    .filter {
+        min-width: 250px;
+        max-width: 250px;
+    }
+}
+@media(max-width: 992px) {
+    .filter {
+        display: none;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+}

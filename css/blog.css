@@ -1,0 +1,68 @@
+.blog  {
+    padding: 0 0 50px 0;
+}
+@media(max-width: 768px) {
+    .blog  {
+        padding: 0 0 25px 0;
+    }
+}
+
+.blog .sectionTitle {
+    margin-top: 15px;
+}
+.blog .tehno {
+    margin-top: 30px;
+}
+.blog .tehno__info-icon {
+    display: none;
+}
+.blog__action {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+}
+.blog .customLink {
+    margin-right: unset;
+    margin-left: 0;
+}
+.blog .tehno__media-btn {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    left: 200px;
+    top: 0;
+}
+.blog .tehno__media-btn svg {
+    width: 20px;
+}
+.blog .tehno__info {
+    background-color: #313e45;
+}
+.blog .tehno__info .sectionTitle,
+.blog .tehno__info .tehno__info-desc{
+    color: #fff;
+}
+.blog .tehno__row.reverse .tehno__info {
+    background-color: #e8e8e8;
+}
+.blog .tehno__row.reverse .tehno__info .tehno__info-desc, 
+.blog .tehno__row.reverse .tehno__info .sectionTitle{
+   color: #313e45;
+}
+@media(max-width: 576px) {
+    .blog .tehno__info .tehno__info-desc{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.blog__pagination {
+    margin-top: 40px;
+    justify-content: center;
+}
+@media(max-width: 768px) {
+    .blog__pagination {
+        margin-top: 20px;
+    }
+}
