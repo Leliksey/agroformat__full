@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".tehno__media-btn").on("click", function() {
         // Получаем идентификатор видео из атрибута данных
-        var videoId = $(this).data("video");
+        var videoId = $(this).data("video2");
         $(this).parent().find("video").attr("data-video", videoId)
         // Находим соответствующее видео по идентификатору
         var video = $(".video[data-video='" + videoId + "']")[0];
@@ -27,7 +27,10 @@ $(document).ready(function() {
         freeDrag:false,
         URLhashListener:false,
         dots:false,
-        autoplay:false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplaySpeed: 5000,
+        autoplayTimeout: 5000,
         margin: 15,
         responsive:{
             0:{
@@ -48,7 +51,7 @@ $(document).ready(function() {
         }
     });
     $(".download__link").click(function() {
-        $(".if_download").show();
+        $(this).parents('.download').find(".if_download").show();
     })
     if($(window).width() < 769) {
         $(".catalog__products-grid").removeClass("catalog__products-column");

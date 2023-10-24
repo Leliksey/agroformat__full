@@ -10,6 +10,6 @@ $(document).ready(function() {
       });
       $(".instrukciya__item.open").next().slideToggle();
       $(".download__link").click(function() {
-        $(".if_download").show();
+        $(this).parents('.download').find(".if_download").show();
     })
 });

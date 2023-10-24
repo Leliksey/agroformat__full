@@ -50,7 +50,10 @@ $(document).ready(function() {
         freeDrag:false,
         URLhashListener:false,
         dots:false,
-        autoplay:false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplaySpeed: 5000,
+        autoplayTimeout: 5000,
         margin: 15,
         responsive:{
             0:{
@@ -77,7 +80,7 @@ $(document).ready(function() {
     })
 
     $(".download__link").click(function() {
-        $(".if_download").show();
+        $(this).parents('.download').find(".if_download").show();
     })
     if($(window).width() < 769) {
         $('.productPage__reviews-grid').owlCarousel({
@@ -194,4 +197,24 @@ $(document).ready(function() {
         $(".close__addReview").click();
         $(".login__modal").show();
       });
+
+      $(".tehno__media-btn").on("click", function() {
+        // Получаем идентификатор видео из атрибута данных
+        // var videoId = $(this).data("video");
+        
+        // Находим соответствующее видео по идентификатору
+        var video = $(this).parent().find("video")
+        // Проверяем, существует ли видео и воспроизводится ли оно в данный момент
+        if (video && video.paused !== undefined) {
+        if (video.paused) {
+            // Если видео приостановлено, запускаем его
+            video.play();
+            $(this).find("svg path").attr("fill", "yellow"); // Изменяем цвет кнопки
+        } else {
+            // Если видео уже воспроизводится, останавливаем его
+            video.pause();
+            $(this).find("svg path").attr("fill", "white"); // Изменяем цвет кнопки
+        }
+        }
+    });
 });
