@@ -936,6 +936,9 @@
         display: block;
         margin: auto;
     }
+    .productPage__reviews-footer .customLink svg{
+        position: relative;
+    }
 }
 @media (max-width: 375px) {
     .productPage__reviews-footer .customLink {
@@ -1097,7 +1100,7 @@
 
 .productPage__reviews-item__date {
     margin-top: 15px;
-    font-family: Geometria, sans-serif;
+    font-family: Geometria-Regular, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -1356,7 +1359,7 @@
 }
 @media (max-width: 576px) {
     .recommended__item-price {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -1405,7 +1408,8 @@
 @media (max-width: 375px) {
     .recommended__item-group a {
         font-size: 10px;
-        padding: 0 8px;
+        padding: 0;
+        width: 92px;
     }
 }
 
@@ -1424,10 +1428,19 @@
         width: 70px;
     }
 }
+<<<<<<< HEAD
 .recommended__item-group button svg{
     z-index: 20;
     position: relative;
 }
+=======
+@media (max-width: 375px) {
+    .recommended__item-group button {
+        width: 42px;
+    }
+}
+
+>>>>>>> 17855367e207019c75503106b376fbef5f91a791
 img.mfp-img {
     max-height: 75vh !important;
 }
