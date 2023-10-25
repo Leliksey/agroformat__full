@@ -140,6 +140,10 @@ ul {
   font-family: "Geometria-Regular";
   src: url("../fonts/Geometria-Regular.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Geometria-Medium";
+  src: url("../fonts/Geometria-Medium.woff2") format("woff2");
+}
 blockquote,
 q {
   quotes: none;
@@ -635,7 +639,7 @@ select::-ms-expand {
 }
 .header__group .telefones a {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: #fff;
@@ -765,6 +769,7 @@ select::-ms-expand {
   text-transform: uppercase;
   width: max-content;
   line-height: 65px;
+  font-family: Geometria-Medium, sans-serif;
 }
 @media (max-width: 1440px) {
   .menu__item > span {
@@ -790,6 +795,7 @@ select::-ms-expand {
   color: #fff;
   text-transform: uppercase;
   width: max-content;
+  font-family: Geometria-Medium, sans-serif;
 }
 @media (max-width: 1440px) {
   .menu__item > a {
@@ -871,9 +877,9 @@ select::-ms-expand {
   }
 }
 .menu__item-list__item span {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
   color: #fff;
   text-transform: uppercase;
   min-width: max-content;
@@ -2800,10 +2806,17 @@ m
     display: none;
   }
 }
+.footer__column.common {
+  margin-left: -60px;
+}
 @media (max-width: 1440px) {
   .footer__column.common {
     display: none;
   }
+}
+.footer__column.common span {
+  max-width: 190px;
+  width: 100%;
 }
 @media (max-width: 576px) {
   .footer__column:not(:first-child) {
