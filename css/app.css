@@ -933,15 +933,15 @@ select::-ms-expand {
   cursor: pointer;
   position: relative;
 }
-.login.open > svg path {
+/* .login.open > svg path {
   fill: #1e98ff;
-}
+} */
 .login:hover > svg path {
   fill: #1e98ff;
 }
-.login.open .login__modal {
+/* .login.open .login__modal {
   display: block !important;
-}
+} */
 /* .login:hover .login__modal {
   display: block;
 } */
@@ -966,10 +966,12 @@ select::-ms-expand {
 }
 @media (max-width: 576px) {
   .login__modal {
+    z-index: 10;
     position: fixed;
     left: 0;
+    top: 46px;
     margin: auto;
-    width: max-content;
+    width: 100%;
   }
 }
 .login__modal:hover {
@@ -1056,6 +1058,9 @@ select::-ms-expand {
   border-bottom: 1px solid #fff;
   color: #0e90ff;
   border-color: #0e90ff;
+  font-weight: 600;
+  font-family: Unbounded;
+  cursor: pointer;
 }
 .login__modal-text.reg:hover {
   color: #0dca2c;
@@ -1068,7 +1073,18 @@ select::-ms-expand {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
-
+@media (max-width: 576px) {
+  .login__modal-form {
+    max-width: 100%;
+  }
+  .login__modal-form input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .login__modal-group {
+    column-gap: 8px;
+  }
+}
 .cabinet {
   display: none;
   position: absolute;
@@ -3077,7 +3093,7 @@ m
   right: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 100;
@@ -3273,6 +3289,7 @@ m
   display: flex;
   justify-content: space-between;
   column-gap: 16px;
+  align-items: flex-start;
 }
 .authorization__form-footer__notRegistered {
   min-width: 166px;
@@ -3283,6 +3300,10 @@ m
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
+  cursor: pointer;
+}
+.authorization__form-footer__notRegistered:hover {
+  color: #0dca2c;
 }
 .authorization__form-footer__links {
   display: flex;
@@ -3488,6 +3509,7 @@ m
 .registration__form-footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   column-gap: 16px;
 }
 .registration__form-footer__registered {
@@ -3499,6 +3521,10 @@ m
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
+  cursor: pointer;
+}
+.registration__form-footer__registered:hover {
+  color: #0dca2c;
 }
 .registration__form-footer__links {
   display: flex;
