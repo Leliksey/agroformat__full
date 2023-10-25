@@ -1,4 +1,9 @@
 jQuery(document).ready(function ($) {
+  $('.account__block-nav__item-current__hidden').click(function () {
+    $('.account__block-nav__hidden-more').slideToggle(200);
+    $('.account__block-nav__item-hidden__arrow').toggleClass('rotate180');
+  });
+
   $('.myAppeal__header').click(function () {
     var accordionItem = $(this).closest('.myAppeal__item');
   

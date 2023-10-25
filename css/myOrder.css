@@ -175,17 +175,18 @@ a:focus {
   color: #000;
   text-decoration: underline;
   font-weight: 600;
-  cursor: default;
 }
 .account__block-nav__item-current__hidden img {
   filter: invert(100%);
 }
 .account__block-nav__item-current__hidden .account__block-nav__item-hidden__arrow {
   filter: invert(0);
-  transform: rotate(180deg);
 }
 .account__block-nav__item-hidden__arrow {
   margin-left: auto;
+}
+.account__block-nav__hidden-more {
+  display: none;
 }
 @media ( max-width: 1200px ) {
   .nav {
@@ -411,7 +412,8 @@ a:focus {
   color: #000;
   font-size: 14px;
   font-style: normal;
-  font-weight: 300;
+  font-family: 'Geometria-Regular';
+  font-weight: 400;
   line-height: normal;
 }
 .myOrder__contacts-TTH {
@@ -710,7 +712,7 @@ a:focus {
   color: #000;
   font-size: 12px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   line-height: normal;
   letter-spacing: 0.24px;
 }
@@ -738,7 +740,7 @@ a:focus {
   color: #000;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   text-transform: uppercase; 
 }
