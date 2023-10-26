@@ -157,7 +157,7 @@
                    </form>
                    <div class="login__modal-group">
                        <div class="login__modal-text">Немає аккаунту?</div>
-                       <a href="#" class="login__modal-text reg">Зареєструватись</a>
+                       <button class="login__modal-text reg">Зареєструватись</button>
                    </div>
                    <div class="login__modal-group">
                        <div class="login__modal-text">Увійти за допомогою</div>
@@ -402,7 +402,7 @@
                                <path d="M13.1107 9.11416H9.47773V3.75557C9.47773 3.54033 9.30332 3.36963 9.0918 3.36963C8.87656 3.36963 8.70586 3.54404 8.70586 3.75557V9.11416H7.12129C6.90605 9.11416 6.73535 9.28857 6.73535 9.5001C6.73535 9.71162 6.90977 9.88603 7.12129 9.88603H8.70586V11.3481C8.70586 11.5634 8.88027 11.7341 9.0918 11.7341C9.30703 11.7341 9.47773 11.5597 9.47773 11.3481V9.88603H13.1107C13.326 9.88603 13.4967 9.71162 13.4967 9.5001C13.4967 9.28857 13.3223 9.11416 13.1107 9.11416Z" fill="#088AF8"/>
                            </svg>
                            <span>
-                               Пн-Сб  8:00 – 18:00 Вс – вихідний
+                               Пн-Сб  8:00 – 18:00 Нд– вихідний
                            </span>
                        </div>
                        <li class="header__contact address">
@@ -522,6 +522,118 @@
             <path d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976314 7.29289 0.292892L0.928932 6.65685C0.538407 7.04738 0.538407 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 17L9 1L7 1L7 17L9 17Z" fill="white"/>
         </svg>
     </button>
+    <div class="authorization__form">
+      <div class="authorization__form-container">
+        <form action="#" class="authorization__form-item">
+          <button class="authorization__form-close"></button>
+          <h2 class="authorization__form-title">авторизація</h2>
+          <div class="authorization__form-block">
+            <div class="authorization__form-wrapper">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="authorization__form-wrapper">
+              <input type="text" placeholder="Пароль">
+            </div>
+          </div>
+          <div class="authorization__form-options">
+            <div class="authorization__form-options__rememberMe">
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe">Запам'ятати мене</label>
+            </div>
+            <a href="#" class="authorization__form-options__forgotPassword">Забули пароль?</a>
+          </div>
+            <button class="authorization__form-button">Увійти
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="none">
+                <path d="M28.7871 8.70711C29.1776 8.31658 29.1776 7.68342 28.7871 7.29289L22.4231 0.928932C22.0326 0.538408 21.3995 0.538408 21.0089 0.928932C20.6184 1.31946 20.6184 1.95262 21.0089 2.34315L26.6658 8L21.0089 13.6569C20.6184 14.0474 20.6184 14.6805 21.0089 15.0711C21.3995 15.4616 22.0326 15.4616 22.4231 15.0711L28.7871 8.70711ZM0 9H28.08V7H0V9Z" fill="white"/>
+              </svg>
+            </button>
+            <div class="authorization__form-footer">
+              <button class="authorization__form-footer__notRegistered">Зареєструватись</button>
+              <div class="authorization__form-footer__links">
+                <span class="authorization__form-footer__text">Увійти за допомогою</span>
+                <a href="#" class="authorization__form-footer__facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 42 40" fill="none">
+                    <rect width="42" height="40" rx="20" fill="#0B84EE"/>
+                    <path d="M22.7399 20.3648H26.6482L27.2618 16.5605H22.7391V14.4813C22.7391 12.901 23.278 11.4996 24.8208 11.4996H27.3V8.17974C26.8644 8.12338 25.9431 8 24.2024 8C20.5676 8 18.4366 9.8393 18.4366 14.0297V16.5605H14.7V20.3648H18.4366V30.821C19.1766 30.9276 19.9261 31 20.6955 31C21.391 31 22.0698 30.9391 22.7399 30.8522V20.3648Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#" class="authorization__form-footer__google">
+                  <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43 20.5C43 9.17816 33.8218 0 22.5 0H20.5C9.17816 0 0 9.17816 0 20.5C0 31.8218 9.17816 41 20.5 41H22.5C33.8218 41 43 31.8218 43 20.5Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0214 20.7333C32.0214 20.0065 31.953 19.3076 31.826 18.6367H21.7014V22.6016H27.4869C27.2377 23.8829 26.4803 24.9684 25.3418 25.6953V28.2671H28.816C30.8487 26.4826 32.0214 23.8549 32.0214 20.7333Z" fill="#4285F4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7011 30.7498C24.6036 30.7498 27.037 29.8319 28.8157 28.2665L25.3414 25.6947C24.3788 26.3097 23.1475 26.6731 21.7011 26.6731C18.9012 26.6731 16.5313 24.87 15.686 22.4473H12.0945V25.103C13.8633 28.4528 17.4988 30.7498 21.7011 30.7498Z" fill="#34A853"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6863 22.4472C15.4713 21.8322 15.3492 21.1752 15.3492 20.4997C15.3492 19.8241 15.4713 19.1672 15.6863 18.5522V15.8965H12.0948C11.3668 17.2802 10.9514 18.8457 10.9514 20.4997C10.9514 22.1537 11.3668 23.7191 12.0948 25.1029L15.6863 22.4472Z" fill="#FBBC05"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7011 14.3267C23.2794 14.3267 24.6964 14.8439 25.8105 15.8596L28.8938 12.9197C27.0321 11.2657 24.5987 10.25 21.7011 10.25C17.4988 10.25 13.8633 12.5469 12.0945 15.8968L15.686 18.5525C16.5313 16.1298 18.9012 14.3267 21.7011 14.3267Z" fill="#EA4335"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+     <div class="registration__form">
+      <div class="registration__form-container">
+        <form action="#" class="registration__form-item">
+          <button class="registration__form-close"></button>
+          <h2 class="registration__form-title">реєстрація</h2>
+          <div class="registration__form-block">
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Прізвище">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Ім'я">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Ваше місце проживання">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Телефон">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Компанія(Необов'язково)">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="ЄДРПОУ(Необов'язково)">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Пароль">
+            </div>
+            <div class="registration__form-wrapper">
+              <input type="text" placeholder="Повторіть пароль">
+            </div>
+          </div>
+            <button class="registration__form-button">зареєструватись
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="none">
+                <path d="M28.7871 8.70711C29.1776 8.31658 29.1776 7.68342 28.7871 7.29289L22.4231 0.928932C22.0326 0.538408 21.3995 0.538408 21.0089 0.928932C20.6184 1.31946 20.6184 1.95262 21.0089 2.34315L26.6658 8L21.0089 13.6569C20.6184 14.0474 20.6184 14.6805 21.0089 15.0711C21.3995 15.4616 22.0326 15.4616 22.4231 15.0711L28.7871 8.70711ZM0 9H28.08V7H0V9Z" fill="white"/>
+              </svg>
+            </button>
+            <div class="registration__form-footer">
+              <button class="registration__form-footer__registered">Я зареєстрований</button>
+              <div class="registration__form-footer__links">
+                <span class="registration__form-footer__text">Увійти за допомогою</span>
+                <a href="#" class="registration__form-footer__facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 42 40" fill="none">
+                    <rect width="42" height="40" rx="20" fill="#0B84EE"/>
+                    <path d="M22.7399 20.3648H26.6482L27.2618 16.5605H22.7391V14.4813C22.7391 12.901 23.278 11.4996 24.8208 11.4996H27.3V8.17974C26.8644 8.12338 25.9431 8 24.2024 8C20.5676 8 18.4366 9.8393 18.4366 14.0297V16.5605H14.7V20.3648H18.4366V30.821C19.1766 30.9276 19.9261 31 20.6955 31C21.391 31 22.0698 30.9391 22.7399 30.8522V20.3648Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#" class="registration__form-footer__google">
+                  <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43 20.5C43 9.17816 33.8218 0 22.5 0H20.5C9.17816 0 0 9.17816 0 20.5C0 31.8218 9.17816 41 20.5 41H22.5C33.8218 41 43 31.8218 43 20.5Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0214 20.7333C32.0214 20.0065 31.953 19.3076 31.826 18.6367H21.7014V22.6016H27.4869C27.2377 23.8829 26.4803 24.9684 25.3418 25.6953V28.2671H28.816C30.8487 26.4826 32.0214 23.8549 32.0214 20.7333Z" fill="#4285F4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7011 30.7498C24.6036 30.7498 27.037 29.8319 28.8157 28.2665L25.3414 25.6947C24.3788 26.3097 23.1475 26.6731 21.7011 26.6731C18.9012 26.6731 16.5313 24.87 15.686 22.4473H12.0945V25.103C13.8633 28.4528 17.4988 30.7498 21.7011 30.7498Z" fill="#34A853"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6863 22.4472C15.4713 21.8322 15.3492 21.1752 15.3492 20.4997C15.3492 19.8241 15.4713 19.1672 15.6863 18.5522V15.8965H12.0948C11.3668 17.2802 10.9514 18.8457 10.9514 20.4997C10.9514 22.1537 11.3668 23.7191 12.0948 25.1029L15.6863 22.4472Z" fill="#FBBC05"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7011 14.3267C23.2794 14.3267 24.6964 14.8439 25.8105 15.8596L28.8938 12.9197C27.0321 11.2657 24.5987 10.25 21.7011 10.25C17.4988 10.25 13.8633 12.5469 12.0945 15.8968L15.686 18.5525C16.5313 16.1298 18.9012 14.3267 21.7011 14.3267Z" fill="#EA4335"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
 </header> 
     <div class="thankYou">
         <div class="container2">
@@ -733,7 +845,7 @@
                           <path d="M13.1107 9.11416H9.47773V3.75557C9.47773 3.54033 9.30332 3.36963 9.0918 3.36963C8.87656 3.36963 8.70586 3.54404 8.70586 3.75557V9.11416H7.12129C6.90605 9.11416 6.73535 9.28857 6.73535 9.5001C6.73535 9.71162 6.90977 9.88603 7.12129 9.88603H8.70586V11.3481C8.70586 11.5634 8.88027 11.7341 9.0918 11.7341C9.30703 11.7341 9.47773 11.5597 9.47773 11.3481V9.88603H13.1107C13.326 9.88603 13.4967 9.71162 13.4967 9.5001C13.4967 9.28857 13.3223 9.11416 13.1107 9.11416Z" fill="#088AF8"/>
                       </svg>
                       <span>
-                          Пн-Сб  8:00 – 18:00 Вс – вихідний 
+                          Пн-Сб  8:00 – 18:00 Нд– вихідний 
                       </span>
                       </li>
                       <li class="footer__contact address">
@@ -855,7 +967,7 @@
                           <path d="M13.1107 9.11416H9.47773V3.75557C9.47773 3.54033 9.30332 3.36963 9.0918 3.36963C8.87656 3.36963 8.70586 3.54404 8.70586 3.75557V9.11416H7.12129C6.90605 9.11416 6.73535 9.28857 6.73535 9.5001C6.73535 9.71162 6.90977 9.88603 7.12129 9.88603H8.70586V11.3481C8.70586 11.5634 8.88027 11.7341 9.0918 11.7341C9.30703 11.7341 9.47773 11.5597 9.47773 11.3481V9.88603H13.1107C13.326 9.88603 13.4967 9.71162 13.4967 9.5001C13.4967 9.28857 13.3223 9.11416 13.1107 9.11416Z" fill="#088AF8"/>
                       </svg>
                       <span>
-                          Пн-Сб  8:00 – 18:00 Вс – вихідний 
+                          Пн-Сб  8:00 – 18:00 Нд– вихідний 
                       </span>
                   </div>
               </div>

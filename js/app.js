@@ -80,13 +80,13 @@ $(document).ready(function() {
   
   $('.login svg').on('click', function(event) {
       //event.stopPropagation(); // Предотвращаем всплытие события
-    //   $('.login').toggleClass('open');
+      $('.login').toggleClass('open');
   });
-//   $(document).on('click', function(event) {
-//       if (!$(event.target).closest('.cart__modal').length) {
-//           $('.cart').removeClass('open');
-//       } 
-//   });
+  $(document).on('click', function(event) {
+      if (!$(event.target).closest('.cart__modal').length) {
+          $('.cart').removeClass('open');
+      } 
+  });
   $(".login").on("mouseover", function () {
     $(".login__modal").show()
   })
@@ -97,6 +97,39 @@ $(document).ready(function() {
       setTimeout(delayHide, 100)
   });
 
+  $('.login svg').on('click', function(event) {
+    $('.authorization__form').css('display', 'flex');
+    $('body').css('overflow', 'hidden');
+    $('.login').removeClass('open');
+    $('.login__modal').hide();
+  });
+
+  $(document).on('click', '.login__modal-text.reg', function(event) {
+    $('.registration__form').css('display', 'flex');
+    $('body').css('overflow', 'hidden');
+    $('.login').removeClass('open');
+    $('.login__modal').hide();
+});
+  
+  $('.authorization__form-close').on('click', function(event) {
+    $('.authorization__form').css('display', 'none');
+    $('body').css('overflow', '');
+  });
+  
+  $('.authorization__form-footer__notRegistered').on('click', function(event) {
+    $('.authorization__form').css('display', 'none');
+    $('.registration__form').css('display', 'flex');
+  });
+
+  $('.registration__form-footer__registered').on('click', function(event) {
+    $('.registration__form').css('display', 'none');
+    $('.authorization__form').css('display', 'flex');
+  });
+
+  $('.registration__form-close').on('click', function(event) {
+    $('.registration__form').css('display', 'none');
+    $('body').css('overflow', '');
+  });
 
 //   $('.cart').on('click', function(event) {
 //       event.stopPropagation(); // Остановить "всплытие" события, чтобы оно не попало на document

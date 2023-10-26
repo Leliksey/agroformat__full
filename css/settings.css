@@ -175,17 +175,18 @@ a:focus {
   color: #000;
   text-decoration: underline;
   font-weight: 600;
-  cursor: default;
 }
 .account__block-nav__item-current__hidden img {
   filter: invert(100%);
 }
 .account__block-nav__item-current__hidden .account__block-nav__item-hidden__arrow {
   filter: invert(0);
-  transform: rotate(180deg);
 }
 .account__block-nav__item-hidden__arrow {
   margin-left: auto;
+}
+.account__block-nav__hidden-more {
+  display: none;
 }
 @media ( max-width: 1200px ) {
   .nav {
