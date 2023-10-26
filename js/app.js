@@ -38,21 +38,21 @@ $(document).ready(function() {
       if (!searchBlock.is(event.target) && searchBlock.has(event.target).length === 0
           && !$(event.target).hasClass('search__btn') && !$(event.target).hasClass('search__modal')) {
           // Клик сделан вне элемента с классом "search" и не на .search__btn и .search__modal
-          searchBlock.removeClass('open');
-          $(".search__modal").removeClass('d__flex')
+        //   searchBlock.removeClass('open');
+        //   $(".search__modal").removeClass('d__flex')
       }
   });
   
   $('.search svg').on('click', function(event) {
       //event.stopPropagation(); // Предотвращаем всплытие события
-      $('.search').toggleClass('open');
+    //   $('.search').toggleClass('open');
   });
   $(document).on('click', function(event) {
       var menuBlock = $('.menu__item');
       
       if (!menuBlock.is(event.target) && menuBlock.has(event.target).length === 0) {
           // Клик сделан вне элемента с классом "menu__item"
-          menuBlock.removeClass('open');
+        //   menuBlock.removeClass('open');
       }
   });
   $(".search").on("mouseover", function () {
@@ -63,21 +63,25 @@ $(document).ready(function() {
     function delayHide() {
         $(".search__modal").hide()
       }
-      setTimeout(delayHide, 200)
+      setTimeout(delayHide, 100)
   });
-  $(".search").click(function() {
-    $(".search__modal").addClass('d__flex')
-  })
+//   $(".search").click(function() {
+//     $(".search__modal").addClass('d__flex')
+//   })
 
   $(document).on('click', function(event) {
       var loginBlock = $('.login');
   
       if (!loginBlock.is(event.target) && loginBlock.has(event.target).length === 0) {
           // Клик сделан вне элемента с классом "login"
-          loginBlock.removeClass('open');
+        //   loginBlock.removeClass('open');
       }
   });
-
+  
+  $('.login svg').on('click', function(event) {
+      //event.stopPropagation(); // Предотвращаем всплытие события
+      $('.login').toggleClass('open');
+  });
   $(document).on('click', function(event) {
       if (!$(event.target).closest('.cart__modal').length) {
           $('.cart').removeClass('open');
@@ -90,7 +94,7 @@ $(document).ready(function() {
     function delayHide() {
         $(".login__modal").hide()
       }
-      setTimeout(delayHide, 200)
+      setTimeout(delayHide, 100)
   });
 
   $('.login svg').on('click', function(event) {
@@ -127,10 +131,10 @@ $(document).ready(function() {
     $('body').css('overflow', '');
   });
 
-  $('.cart').on('click', function(event) {
-      event.stopPropagation(); // Остановить "всплытие" события, чтобы оно не попало на document
-      $('.cart').toggleClass('open');
-  });
+//   $('.cart').on('click', function(event) {
+//       event.stopPropagation(); // Остановить "всплытие" события, чтобы оно не попало на document
+//       $('.cart').toggleClass('open');
+//   });
   
   $('.cart__modal').on('click', function(event) {
       event.stopPropagation(); // Остановить "всплытие" события, чтобы оно не попало на document
@@ -149,17 +153,17 @@ $(document).ready(function() {
         function delayHide() {
             $(".cart__modal").hide()
           }
-          setTimeout(delayHide, 200)
+          setTimeout(delayHide, 100)
       });
       $('.cart__plus').on('click', function() {
           var resultElement = $(this).siblings('.cart__product-result');
           var currentValue = parseInt(resultElement.text());
           resultElement.text(currentValue + 1);
       });
-      $(".header__content > div").click(function() {
-          $(".header__content > div").removeClass("open");
-          $(this).addClass("open");
-      })
+    //   $(".header__content > div").click(function() {
+    //       $(".header__content > div").removeClass("open");
+    //       $(this).addClass("open");
+    //   })
       
       $('.main__slider').owlCarousel({
           loop:true,
