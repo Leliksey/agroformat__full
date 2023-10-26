@@ -724,15 +724,16 @@ a:focus {
 }
 .request__form-wrapper__list-item {
   color: #000;
+  font-family: "Geometria-Medium";
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   padding: 8px 20px;
   cursor: pointer;
 }
 .request__form-wrapper__list-item:hover {
-  background: #f4f4f4;
+  color: #088AF8;
 }
 @media ( max-width: 1200px ) {
   .request__form-title {

@@ -74,7 +74,7 @@ $(document).ready(function() {
         }
     });
 
-    $(".aboutProduct__row-title_mobile").click(function() {
+    $(".aboutProduct__header-link__mobile-title").click(function() {
         $(this).next().slideToggle();
         $(this).toggleClass("open");
     })
