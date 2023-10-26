@@ -15,24 +15,54 @@
         flex-direction: column;
     }
 }
+@media (max-width: 576px) {
+    .product__content {
+        padding: 20px 0;
+    }
+}
 
 .product__preview {
     width: 50vw;
     position: relative;
     background-color: #e8e8e8;
-    padding: 50px 0;
+    padding: 35px 0;
     position: relative;
+    height: 635px;
+}
+
+.product__preview-media.popup-gallery.owl-loaded.owl-drag {
+  height: 100%;
+}
+.product__preview-media.popup-gallery.owl-loaded.owl-drag .owl-stage-outer {
+  height: 100%;
+}
+.product__preview-media.popup-gallery.owl-loaded.owl-drag .owl-stage {
+  height: 100%;
+}
+.product__preview-media.popup-gallery.owl-loaded.owl-drag .owl-stage img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
 }
 @media (max-width: 1200px) {
     .product__preview {
         /* width: 40vw; */
         height: max-content;
+        padding-bottom: 20px;
+    }
+    .product__preview-media.popup-gallery.owl-loaded.owl-drag .owl-stage img {
+      width: 90%;
     }
 }
 @media (max-width: 992px) {
     .product__preview {
         width: 45vw;
     }
+    .product__preview .owl-nav button {
+      display: block;
+      width: 11px;
+      height: 19px;
+  }
 }
 @media (max-width: 768px) {
     .product__preview {
@@ -40,11 +70,11 @@
         padding: 20px 0;
         margin-top: 20px;
     }
-    .product__preview .owl-nav button {
+    /* .product__preview .owl-nav button {
         display: block;
         width: 11px;
         height: 19px;
-    }
+    } */
 }
 .tehno {
 }
@@ -127,13 +157,21 @@
 .product__preview-media .owl-next:hover {
     background-image: url("data:image/svg+xml,%3Csvg width='29' height='50' viewBox='0 0 29 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.04339 22.5247L22.9183 1.0262C24.3099 -0.342072 26.566 -0.342072 27.9568 1.0262C29.3477 2.39326 29.3477 4.61049 27.9568 5.97744L8.60083 25.0004L27.9562 44.0226C29.3472 45.3902 29.3472 47.6072 27.9562 48.9743C26.5653 50.3419 24.3093 50.3419 22.9178 48.9743L1.04282 27.4754C0.347345 26.7916 2.10722e-06 25.8962 2.18553e-06 25.0005C2.26388e-06 24.1043 0.348023 23.2083 1.04339 22.5247Z' fill='%23EA9311'/%3E%3C/svg%3E%0A");
 }
-.product__preview-media .owl-dots {
-    margin-top: 30px;
-}
 .product__preview-media .owl-dots button {
     background-color: #c6c6c6;
     border: 2px solid #c6c6c6;
     cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .product__preview-media .owl-dots {
+      margin-top: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .product__preview-media .owl-dots button {
+        width: 10px;
+        height: 10px;
+    }
 }
 @media (max-width: 768px) {
     .product__preview-media .owl-dots button {
@@ -257,6 +295,12 @@
         line-height: 22px;
     }
 }
+@media (max-width: 576px) {
+    .product__info-adv li {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
 
 .product__info-adv li::before {
     content: "";
@@ -280,7 +324,7 @@
 }
 @media (max-width: 992px) {
     .product__info-adv li::before {
-        width: 20px;
+        min-width: 20px;
         height: 20px;
     }
 }
@@ -326,6 +370,11 @@
         padding: 10px;
         row-gap: 5px;
         height: 65px;
+    }
+}
+@media (max-width: 576px) {
+    .product .main__info-param {
+        padding: 8px;
     }
 }
 .main__info-param svg {
@@ -462,6 +511,11 @@
         min-height: max-content;
     }
 }
+@media (max-width: 576px) {
+    .product__info-count svg {
+        width: 10px;
+    }
+}
 
 .product__info-count div {
     padding: 20px 12px;
@@ -471,6 +525,11 @@
 @media (max-width: 1200px) {
     .product__info-count div {
         padding: 16px 10px;
+    }
+}
+@media (max-width: 375px) {
+    .product__info-count div {
+        padding: 16px 9px !important
     }
 }
 
@@ -540,6 +599,11 @@
         margin-left: 20px;
         font-size: 14px;
         line-height: 18px;
+    }
+}
+@media (max-width: 375px) {
+    .product__info-order {
+        margin-left: 15px;
     }
 }
 
@@ -1426,6 +1490,11 @@
 @media (max-width: 768px) {
     .recommended__item-group button {
         width: 70px;
+    }
+}
+@media (max-width: 375px) {
+    .recommended__item-group button {
+        width: 42px;
     }
 }
 .recommended__item-group button svg{

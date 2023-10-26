@@ -639,7 +639,7 @@ select::-ms-expand {
 }
 .header__group .telefones a {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
   color: #fff;
@@ -835,6 +835,11 @@ select::-ms-expand {
     top: 0;
   }
 }
+@media (max-width: 375px) {
+  .menu__item-list {
+    min-width: 100%
+  }
+}
 .menu__item-list__item {
   display: flex;
   column-gap: 17px;
@@ -877,8 +882,8 @@ select::-ms-expand {
   }
 }
 .menu__item-list__item span {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 15px;
   color: #fff;
   text-transform: uppercase;
