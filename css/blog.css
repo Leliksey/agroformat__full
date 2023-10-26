@@ -66,3 +66,12 @@
         margin-top: 20px;
     }
 }
+@media(max-width: 375px) {
+  .blog .customLink {
+    padding: 16px 12px;
+  }
+  .blog .tehno__media-btn.customLink {
+    padding: 16px;
+    left: 180px;
+  }
+}

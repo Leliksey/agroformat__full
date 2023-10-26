@@ -645,6 +645,9 @@
     color: #282828;
     text-decoration: underline;
 }
+.cartPage__bottom-link:hover {
+    color: #088AF8;
+}
 .cartPage__bottom-group {
     display: flex;
     align-items: center;
@@ -671,6 +674,9 @@
 }
 .cartPage__bottom .customLink {
     font-family: Unbounded, sans-serif;
+}
+.cartPage__bottom .customLink::before {
+  background-color: #0dca2c;
 }
 @media(max-width: 992px) {
     .cartPage__bottom .customLink {

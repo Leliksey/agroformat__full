@@ -375,6 +375,12 @@
     align-items: center;
     text-transform: uppercase;
 }
+.catalog__products-grid .recommended__item-group a::before {
+  z-index: -1;
+}
+.catalog__products-grid .recommended__item-group a:hover::before {
+  transform: translateX(-20px);
+}
 @media (max-width: 1200px) {
     .catalog__products-grid .recommended__item-group a {
         max-width: 120px;
