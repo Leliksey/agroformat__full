@@ -1429,12 +1429,15 @@ header .container {
       cursor: pointer;
       margin-left: 16px;
       text-transform: uppercase;
+      transition: all 0.3s ease;
   }
   .download__link:hover {
     color: #EA9311 !important;
+    transition: all 0.3s ease;
   }
   .download__link:hover::after {
     filter: invert(56%) sepia(87%) saturate(1884%) hue-rotate(5deg) brightness(104%) contrast(88%);
+    transition: all 0.3s ease;
   }
   @media (max-width: 768px) {
       .download__link {
@@ -1450,6 +1453,7 @@ header .container {
       height: 19px;
       background-size: contain;
       background-repeat: no-repeat;
+      transition: all 0.3s ease;
   }
   
 

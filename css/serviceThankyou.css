@@ -176,9 +176,11 @@ a:focus {
   line-height: normal;
   text-decoration-line: underline;
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 .serviceThankyou__link:hover {
   color: #088AF8;
+  transition: all 0.3s ease;
 }
 @media(max-width: 576px) {
   .serviceThankyou__image {

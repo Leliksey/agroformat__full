@@ -650,12 +650,15 @@
     margin-top: 20px;
     text-decoration: underline;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 .product__info-policy:hover {
   color: #EA9311 !important;
+  transition: all 0.3s ease;
 }
 .product__info-policy:hover::before {
   filter: invert(56%) sepia(87%) saturate(1884%) hue-rotate(5deg) brightness(104%) contrast(88%);
+  transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
     .product__info-policy {
@@ -671,6 +674,7 @@
     height: 21px;
     background-size: contain;
     background-repeat: no-repeat;
+  transition: all 0.3s ease;
 }
 .product__preview .tehno__media-btn svg {
     width: 50px;
@@ -1000,6 +1004,7 @@
     cursor: pointer;
     margin-left: 16px;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
     .download__link {
@@ -1015,12 +1020,15 @@
     height: 19px;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
 }
 .download__link:hover {
   color: #EA9311 !important;
+  transition: all 0.3s ease;
 }
 .download__link:hover::after {
   filter: invert(56%) sepia(87%) saturate(1884%) hue-rotate(5deg) brightness(104%) contrast(88%);
+  transition: all 0.3s ease;
 }
 .productPage__reviews-footer {
     margin-top: 35px;
@@ -1250,10 +1258,41 @@
     margin-top: 35px;
     position: relative;
 }
-@media (max-width: 768px) {
+.recommended__slider::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0) 0%, rgba(49, 62, 69, 1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 1;
+}
+.recommended__slider::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, rgba(49, 62, 69, 1) 100%);
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 1;
+}
+@media(max-width: 768px) {
     .recommended__slider {
         margin-top: 20px;
     }
+}
+@media(max-width: 576px) {
+  .recommended__slider::after {
+    display: none;
+  }
+  .recommended__slider::before {
+    display: none;
+  }
+
 }
 
 .recommended__slider .owl-nav button {

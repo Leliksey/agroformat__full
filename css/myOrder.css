@@ -106,6 +106,7 @@ a:focus {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item:first-of-type {
   margin-top: 20px;
@@ -115,12 +116,15 @@ a:focus {
 }
 .account__block-nav__item img {
   width: auto;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item:hover {
   color: #000;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item:hover img {
   filter: invert(100%);
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-current {
   color: #000;
@@ -161,15 +165,19 @@ a:focus {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-hidden:hover {
   color: #000;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-hidden:hover img:first-of-type {
   filter: invert(100%);
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-hidden img {
   width: auto;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-current__hidden {
   color: #000;
@@ -472,9 +480,11 @@ a:focus {
   border: none;
   background: inherit;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .myOrder__contacts-wallet:hover {
   color: #088AF8;
+  transition: all 0.3s ease;
 }
 .myOrder__contacts-wallet:hover img {
   filter: invert(35%) sepia(99%) saturate(2308%) hue-rotate(191deg) brightness(103%) contrast(94%);
@@ -497,9 +507,11 @@ a:focus {
   border: none;
   background: inherit;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .myOrder__contacts-download:hover {
   color: #088AF8;
+  transition: all 0.3s ease;
 }
 .myOrder__contacts-download img {
   width: auto;
@@ -595,9 +607,11 @@ a:focus {
   border: none;
   background: inherit;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .myOrder__contacts-cancel:hover {
   color: #088AF8;
+  transition: all 0.3s ease;
 }
 @media ( max-width: 1200px ) {
   .myOrder__contacts {

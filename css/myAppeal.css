@@ -106,6 +106,7 @@ a:focus {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item:first-of-type {
   margin-top: 20px;
@@ -115,12 +116,15 @@ a:focus {
 }
 .account__block-nav__item img {
   width: auto;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item:hover {
   color: #000;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item:hover img {
   filter: invert(100%);
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-current {
   color: #000;
@@ -161,15 +165,19 @@ a:focus {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-hidden:hover {
   color: #000;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-hidden:hover img:first-of-type {
   filter: invert(100%);
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-hidden img {
   width: auto;
+  transition: all 0.3s ease;
 }
 .account__block-nav__item-current__hidden {
   color: #000;

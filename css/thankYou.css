@@ -243,9 +243,11 @@
     display: block;
     margin: 20px auto 0;
     width: max-content;
+    transition: all 0.3s ease;
 }
 .thankYou__link:hover {
     color: #088af8;
+    transition: all 0.3s ease;
 }
 .thankYou .customLink svg {
     height: 15px;
