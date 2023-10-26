@@ -241,3 +241,9 @@
         max-width: 650px;
     }
 }
+@media (max-width: 375px) {
+    .contacts__socials {
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+}

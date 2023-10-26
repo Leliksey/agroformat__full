@@ -1015,11 +1015,12 @@ select::-ms-expand {
   font-size: 12px;
   font-weight: 200;
   line-height: 15px;
-  width: 290px;
   color: #fff;
   border: none;
   outline: none;
   background: #97979742;
+  width: 100%;
+  box-sizing: border-box;
 }
 .login__modal input::placeholder {
   margin-top: 18px;
@@ -1054,8 +1055,7 @@ select::-ms-expand {
   line-height: 15px;
 }
 .login__modal-form {
-  max-width: 289px;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 .login__modal-form button img {
@@ -1106,13 +1106,6 @@ select::-ms-expand {
   transition: all 0.3s ease;
 }
 @media (max-width: 576px) {
-  .login__modal-form {
-    max-width: 100%;
-  }
-  .login__modal-form input {
-    width: 100%;
-    box-sizing: border-box;
-  }
   .login__modal-group {
     column-gap: 8px;
   }
