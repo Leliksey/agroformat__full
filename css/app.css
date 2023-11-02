@@ -1332,13 +1332,13 @@ select::-ms-expand {
 .cart__bottom {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: 10px;
   margin-top: 5px;
 }
 .cart__bottom-group {
   display: flex;
   align-items: start;
-  flex-direction: column;
   column-gap: 10px;
 }
 .cart__bottom-text {
@@ -1942,6 +1942,7 @@ m
   padding: 30px 20px;
   max-width: 445px;
   position: relative;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .slider__item {
@@ -1970,6 +1971,20 @@ m
 }
 .slider__item:hover .slider__link img {
   filter: invert(1);
+}
+.slider__img {
+  transition: all 0.3s ease;
+}
+.slider__item:hover .slider__img {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.slider__info {
+  transition: all 0.3s ease;
+}
+.slider__item:hover .slider__info {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 .slider__item > a {
   position: absolute;
@@ -2132,6 +2147,11 @@ m
 @media (max-width: 576px) {
   .categoryWall__item span {
     font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .categoryWall__item {
+    padding-left: 0;
   }
 }
 .categoryWall__item:hover {
