@@ -50,13 +50,6 @@ $(document).ready(function() {
     observer.observe(elm);
   };
 
-  function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-        change.target.classList.add('element-show');
-      }
-    });
-  };
   let options1 = {};
   let observer1 = new IntersectionObserver(onEntry, options1);
   let elements1 = document.querySelectorAll('.textAppears__right');
@@ -64,13 +57,6 @@ $(document).ready(function() {
     observer1.observe(elm);
   };
 
-  function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-        change.target.classList.add('element-show');
-      }
-    });
-  };
   let options2 = {};
   let observer2 = new IntersectionObserver(onEntry, options2);
   let elements2 = document.querySelectorAll('.textAppears__left');
