@@ -14,3 +14,30 @@
   position: absolute;
   left: 0;
 }
+.elementAppears {
+  opacity: 0;
+  transform: translateY(10%);
+}
+.elementAppears.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+.textAppears__right {
+  opacity: 0;
+  transform: translateX(10%);
+}
+.textAppears__right.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+.textAppears__left {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+.textAppears__left.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
