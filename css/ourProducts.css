@@ -72,7 +72,20 @@
         max-width: 300px;
     }
 }
-
+.ourProducts__sl .slider__img {
+    transition: all 0.3s ease;
+  }
+  .ourProducts__sl .slider__item:hover .slider__img {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  .ourProducts__sl .slider__info {
+    transition: all 0.3s ease;
+  }
+  .ourProducts__sl .slider__item:hover .slider__info {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
 .ourProducts__about {
     margin-top: 100px;
 }
