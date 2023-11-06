@@ -47,3 +47,10 @@
 .recommended__item-group button.active::before {
   background-color: #0ab627;
 }
+.recommended__item-group button::before {
+  width: 350%;
+  transition-duration: 1s;
+}
+.recommended__item-group button:hover::before {
+  transition-duration: 1s;
+}

@@ -65,11 +65,31 @@ $(document).ready(function() {
   };
 
   $('.recommended__item-group button').click(function(event){
+    var button = $(this); 
     event.stopPropagation();
-    $(this).addClass('active');
-  });
+    button.addClass('active');
+    setTimeout(function() {
+      button.removeClass('active');
+    }, 300);
+});
 
-  $('.recommended__item-group button').mouseleave(function(){
-    $(this).removeClass('active');
+  $(".recommended__item-group button").click(function(){
+    var cartIcon = $(this).find('svg');
+    var cartPosition = cartIcon.offset();
+    var productPosition = $('.cart svg').offset();
+    var tempIcon = cartIcon.clone().appendTo("body");
+    tempIcon.css({
+        'position': 'absolute',
+        'top': cartPosition.top,
+        'left': cartPosition.left,
+        'z-index': '100',
+        'fill': 'blue'
+    }).animate({
+        'top': productPosition.top,
+        'left': productPosition.left,
+        'opacity': '0.5'
+    }, 1000, function(){
+      $(this).remove();
+    })
   });
 })
