@@ -64,4 +64,12 @@ $(document).ready(function() {
     observer2.observe(elm);
   };
 
+  $('.recommended__item-group button').click(function(event){
+    event.stopPropagation();
+    $(this).addClass('active');
+  });
+
+  $('.recommended__item-group button').mouseleave(function(){
+    $(this).removeClass('active');
+  });
 })
